@@ -1,10 +1,18 @@
 package com.example.gohelloworld.Models;
 
 public class UserDetails {
-    private String userId, username, userEmail, userPassword, userNIM;
+    private String userId, username, userEmail, userPassword, userNIM, userJurusan;
 
-    public UserDetails(){
+    public UserDetails() {
+    }
 
+    public UserDetails(String userId, String username, String userEmail, String userPassword, String userNIM, String userJurusan) {
+        this.userId = userId;
+        this.username = username;
+        this.userEmail = userEmail;
+        this.userPassword = userPassword;
+        this.userNIM = userNIM;
+        this.userJurusan = userJurusan;
     }
 
     public String getUserId() {
@@ -47,11 +55,11 @@ public class UserDetails {
         this.userNIM = userNIM;
     }
 
-    public UserDetails(String userId, String username, String userEmail, String userPassword, String userNIM){
-        this.userId = userId;
-        this.username = username;
-        this.userEmail = userEmail;
-        this.userPassword = userPassword;
-        this.userNIM = userNIM;
+    public String getUserJurusan() {
+        return userJurusan;
+    }
+
+    public void setUserJurusan(String userJurusan) {
+        this.userJurusan = userJurusan;
     }
 }
